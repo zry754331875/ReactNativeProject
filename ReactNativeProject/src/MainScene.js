@@ -5,10 +5,6 @@ import  StudyMainC  from "./containers/StudyMainC";
 import  WorkMainC  from "./containers/WorkMainC";
 import  TabBarItem  from "./components/common/TabBarItem";
 
-import  StudyMain  from "./components/Study/StudyMain";
-import  MineMain  from "./components/Mine/MineMain";
-import  WorkMain  from "./components/Work/WorkMain";
-
 export default class MainScene extends PureComponent {
   render() {
     return (
@@ -28,8 +24,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('../assets/tabbar_homepage.png')}
-                        selectedImage={require('../assets/tabbar_homepage_selected.png')}
+                        normalImage={require('./img/tabbar/tabbar_homepage.png')}
+                        selectedImage={require('./img/tabbar/tabbar_homepage_selected.png')}
                     />
                 )
             }),
@@ -42,8 +38,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('../assets/tabbar_merchant.png')}
-                        selectedImage={require('../assets/tabbar_merchant_selected.png')}
+                        normalImage={require('./img/tabbar/tabbar_merchant.png')}
+                        selectedImage={require('./img/tabbar/tabbar_merchant_selected.png')}
                     />
                 )
             }),
@@ -57,8 +53,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('../assets/tabbar_order.png')}
-                        selectedImage={require('../assets/tabbar_order_selected.png')}
+                        normalImage={require('./img/tabbar/tabbar_order.png')}
+                        selectedImage={require('./img/tabbar/tabbar_order_selected.png')}
                     />
                 )
             }),

@@ -2,7 +2,10 @@ import React, { PureComponent } from 'react';
 import { View,
           Text,
         Button,
-        SectionList, } from "react-native";
+        FlatList,
+      ScrollView,
+    StyleSheet, } from "react-native";
+import HomeMenu from "./HomeMenu";
 
 export default class WorkMain extends PureComponent {
 
@@ -16,9 +19,16 @@ export default class WorkMain extends PureComponent {
 
   render() {
     return (
-      <View style={{flex:1}}>
-        
-      </View>
+      <ScrollView style={...this.props.style}>
+        <HomeMenu style={styles.HomeMenu}>
+        </HomeMenu>
+      </ScrollView>
     )
   }
 };
+
+const styles = StyleSheet.create({
+  HomeMenu:{
+    height: 200,
+  }
+})
