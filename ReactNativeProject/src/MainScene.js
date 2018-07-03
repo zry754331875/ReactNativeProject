@@ -23,7 +23,7 @@ const Tab = TabNavigator(
         work: {
             screen: WorkMainC,
             navigationOptions: ({navigation}) => ({
-                title: '安全工作',
+                title: '首页',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
                         tintColor={tintColor}
@@ -37,7 +37,7 @@ const Tab = TabNavigator(
         study: {
             screen: StudyMainC,
             navigationOptions: ({navigation}) => ({
-                title: '学习培训',
+                title: '附近',
                 tabBarIcon: ({focused, tintColor}) => (
                     <TabBarItem
                         tintColor={tintColor}
