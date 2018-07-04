@@ -19,8 +19,8 @@ export default class WorkMain extends PureComponent {
 
   render() {
     return (
-      <ScrollView style={...this.props.style}>
-        <HomeMenu style={styles.HomeMenu}>
+      <ScrollView style={this.props.style}>
+        <HomeMenu style={styles.homeMenu} menuData={this.props.menuData} menuRowCount={this.props.menuRowCount} menuRows={this.props.menuRows}>
         </HomeMenu>
       </ScrollView>
     )
@@ -28,7 +28,8 @@ export default class WorkMain extends PureComponent {
 };
 
 const styles = StyleSheet.create({
-  HomeMenu:{
-    height: 200,
-  }
+  homeMenu:{
+    
+  },
+  
 })
