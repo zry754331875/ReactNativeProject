@@ -49,9 +49,10 @@ export default class HomeMenu extends Component {
                     style={styles.menuView && {backgroundColor: global.randomColor(),width:global.ScreenWidth}}
                     data={menuViewData}
                     renderItem={({item})=>this._renderMenuItem(item)}
-                    horizontal={true}
                     keyExtractor={(item,index)=>index+''}
                     scrollEnabled={false}
+                    numColumns={menuRows}
+                    columnWrapperStyle={{marginTop: 8}}
           >
           </FlatList>
       )
@@ -61,7 +62,7 @@ export default class HomeMenu extends Component {
 
     return (
       <View style={this.props.style}>
-        <ScrollView pagingEnabled={true} horizontal={true}>
+        <ScrollView pagingEnabled={true} horizontal={true} showsHorizontalScrollIndicator={false}>
             {menuViews}
         </ScrollView>
       </View>
@@ -73,14 +74,16 @@ export default class HomeMenu extends Component {
     let {title,icon} = item
 
     let {menuRowCount,menuRows} = this.props
-
+    
     return (
-      <TouchableOpacity style={{width: global.ScreenWidth/menuRows,height: global.ScreenWidth/menuRows,alignItems:'center'}}>
-        <Image source={icon} resizeMode={'contain'}>
-        </Image>
-        <Text>
-          title
-        </Text>
+      <TouchableOpacity style={{width: global.ScreenWidth/menuRows,height: global.ScreenWidth/menuRows/2+28,}}>
+        <View style={{alignItems:'center'}}>
+          <Image source={icon} resizeMode={'contain'} style={{height: global.ScreenWidth/menuRows/2}}>
+          </Image>
+          <Text style={{marginTop: 8}}>
+            {title}
+          </Text>
+        </View>
       </TouchableOpacity>
     )
   }

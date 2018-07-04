@@ -1438,7 +1438,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   _reactNative.AppRegistry.registerComponent('ReactNativeProject', function () {
     return _App2.default;
   });
-},11,[12,493,695],"index.js");
+},11,[12,493,705],"index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -61652,7 +61652,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }(_react2.PureComponent));
 
   exports.default = App;
-},493,[118,130,12,494,516,604],"App.js");
+},493,[118,130,12,494,516,614],"App.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -63460,7 +63460,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         work: _WorkMainR2.default,
         studt: _StudyMainR2.default
     });
-},518,[505,519,602,603],"src/reducers/index.js");
+},518,[505,519,602,613],"src/reducers/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65962,7 +65962,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         menuRows: 5
     };
     exports.default = (0, _reduxActions.handleActions)({}, defaultState);
-},602,[520,697,698,699,700,701,702,703,704,705,706],"src/reducers/WorkMainR.js");
+},602,[520,603,604,605,606,607,608,609,610,611,612],"src/reducers/WorkMainR.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -65974,7 +65974,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_food_category",
     "type": "png"
   });
-},697,[326],"src/img/home/icon_homepage_food_category.png");
+},603,[326],"src/img/home/icon_homepage_food_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -65986,7 +65986,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_movie_category",
     "type": "png"
   });
-},698,[326],"src/img/home/icon_homepage_movie_category.png");
+},604,[326],"src/img/home/icon_homepage_movie_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -65998,7 +65998,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_hotel_category",
     "type": "png"
   });
-},699,[326],"src/img/home/icon_homepage_hotel_category.png");
+},605,[326],"src/img/home/icon_homepage_hotel_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66010,7 +66010,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_ktv_category",
     "type": "png"
   });
-},700,[326],"src/img/home/icon_homepage_ktv_category.png");
+},606,[326],"src/img/home/icon_homepage_ktv_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66022,7 +66022,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_default",
     "type": "png"
   });
-},701,[326],"src/img/home/icon_homepage_default.png");
+},607,[326],"src/img/home/icon_homepage_default.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66034,7 +66034,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_foottreat_category",
     "type": "png"
   });
-},702,[326],"src/img/home/icon_homepage_foottreat_category.png");
+},608,[326],"src/img/home/icon_homepage_foottreat_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66046,7 +66046,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_life_service_category",
     "type": "png"
   });
-},703,[326],"src/img/home/icon_homepage_life_service_category.png");
+},609,[326],"src/img/home/icon_homepage_life_service_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66058,7 +66058,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_entertainment_category",
     "type": "png"
   });
-},704,[326],"src/img/home/icon_homepage_entertainment_category.png");
+},610,[326],"src/img/home/icon_homepage_entertainment_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66070,7 +66070,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_beauty_category",
     "type": "png"
   });
-},705,[326],"src/img/home/icon_homepage_beauty_category.png");
+},611,[326],"src/img/home/icon_homepage_beauty_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -66082,7 +66082,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "icon_homepage_shopping_category",
     "type": "png"
   });
-},706,[326],"src/img/home/icon_homepage_shopping_category.png");
+},612,[326],"src/img/home/icon_homepage_shopping_category.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66092,7 +66092,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   var defaultState = {};
   exports.default = (0, _reduxActions.handleActions)({}, defaultState);
-},603,[520],"src/reducers/StudyMainR.js");
+},613,[520],"src/reducers/StudyMainR.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -66276,7 +66276,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             showIcon: true
         }
     });
-},604,[118,130,605,681,683,685,688,689,690,691,692,693,694],"src/MainScene.js");
+},614,[118,130,615,691,693,695,698,699,700,701,702,703,704],"src/MainScene.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = {
     get createNavigationContainer() {
@@ -66392,7 +66392,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }
 
   };
-},605,[606,611,609,608,612,613,649,653,671,640,654,650,637,614,615,617,621,620,623,624,673,678,655,668,670,651,679,680],"node_modules/react-navigation/src/react-navigation.js");
+},615,[616,621,619,618,622,623,659,663,681,650,664,660,647,624,625,627,631,630,633,634,683,688,665,678,680,661,689,690],"node_modules/react-navigation/src/react-navigation.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66716,7 +66716,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return NavigationContainer;
   }
-},606,[118,130,12,607,608,609,610],"node_modules/react-navigation/src/createNavigationContainer.js");
+},616,[118,130,12,617,618,619,620],"node_modules/react-navigation/src/createNavigationContainer.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66728,7 +66728,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   var BackHandler = _reactNative.BackHandler || _reactNative.BackAndroid;
   exports.BackHandler = BackHandler;
   exports.MaskedViewIOS = _reactNative.MaskedViewIOS;
-},607,[12],"node_modules/react-navigation/src/PlatformHelpers.native.js");
+},617,[12],"node_modules/react-navigation/src/PlatformHelpers.native.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66885,7 +66885,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     uri: uri,
     completeTransition: completeTransition
   };
-},608,[],"node_modules/react-navigation/src/NavigationActions.js");
+},618,[],"node_modules/react-navigation/src/NavigationActions.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66976,7 +66976,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   var _invariant2 = _interopRequireDefault(_invariant);
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},609,[608,610],"node_modules/react-navigation/src/addNavigationHelpers.js");
+},619,[618,620],"node_modules/react-navigation/src/addNavigationHelpers.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -67013,7 +67013,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   module.exports = invariant;
-},610,[],"node_modules/react-navigation/src/utils/invariant.js");
+},620,[],"node_modules/react-navigation/src/utils/invariant.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67127,7 +67127,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }
   };
   exports.default = StateUtils;
-},611,[610],"node_modules/react-navigation/src/StateUtils.js");
+},621,[620],"node_modules/react-navigation/src/StateUtils.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67209,7 +67209,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       return Navigator;
     };
   }
-},612,[118,130],"node_modules/react-navigation/src/navigators/createNavigator.js");
+},622,[118,130],"node_modules/react-navigation/src/navigators/createNavigator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67292,7 +67292,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     });
     return (0, _createNavigationContainer2.default)(navigator);
   };
-},613,[118,606,612,614,640,608],"node_modules/react-navigation/src/navigators/StackNavigator.js");
+},623,[118,616,622,624,650,618],"node_modules/react-navigation/src/navigators/StackNavigator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67435,7 +67435,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }, _temp2));
 
   exports.default = CardStackTransitioner;
-},614,[118,130,12,615,635,637,634],"node_modules/react-navigation/src/views/CardStack/CardStackTransitioner.js");
+},624,[118,130,12,625,645,647,644],"node_modules/react-navigation/src/views/CardStack/CardStackTransitioner.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68000,14 +68000,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = CardStack;
-},615,[118,130,616,12,617,620,608,609,632,633,634,636],"node_modules/react-navigation/src/views/CardStack/CardStack.js");
+},625,[118,130,626,12,627,630,618,619,642,643,644,646],"node_modules/react-navigation/src/views/CardStack/CardStack.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = clamp;
 
   function clamp(value, min, max) {
     return min < max ? value < min ? min : value > max ? max : value : value < max ? max : value > min ? min : value;
   }
-},616,[],"node_modules/clamp/index.js");
+},626,[],"node_modules/clamp/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68113,7 +68113,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   Card = (0, _PointerEventsContainer2.default)(Card);
   exports.default = Card;
-},617,[118,130,12,618],"node_modules/react-navigation/src/views/CardStack/Card.js");
+},627,[118,130,12,628],"node_modules/react-navigation/src/views/CardStack/Card.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68277,7 +68277,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return Container;
   }
-},618,[118,130,610,619],"node_modules/react-navigation/src/views/CardStack/PointerEventsContainer.js");
+},628,[118,130,620,629],"node_modules/react-navigation/src/views/CardStack/PointerEventsContainer.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68308,7 +68308,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }();
 
   exports.default = AnimatedValueSubscription;
-},619,[12],"node_modules/react-navigation/src/views/AnimatedValueSubscription.js");
+},629,[12],"node_modules/react-navigation/src/views/AnimatedValueSubscription.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68999,7 +68999,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = (0, _withOrientation2.default)(Header);
-},620,[118,130,12,607,621,623,624,627,628,630,631],"node_modules/react-navigation/src/views/Header/Header.js");
+},630,[118,130,12,617,631,633,634,637,638,640,641],"node_modules/react-navigation/src/views/Header/Header.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -69396,7 +69396,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }, _temp2));
 
   exports.default = (0, _withOrientation2.default)(SafeView);
-},621,[118,130,12,622],"node_modules/react-native-safe-area-view/index.js");
+},631,[118,130,12,632],"node_modules/react-native-safe-area-view/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -69517,7 +69517,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         height = _ref.height;
     return width > height;
   };
-},622,[118,130,12,499],"node_modules/react-native-safe-area-view/withOrientation.js");
+},632,[118,130,12,499],"node_modules/react-native-safe-area-view/withOrientation.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -69566,7 +69566,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = HeaderTitle;
-},623,[118,12],"node_modules/react-navigation/src/views/Header/HeaderTitle.js");
+},633,[118,12],"node_modules/react-navigation/src/views/Header/HeaderTitle.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -69759,7 +69759,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = HeaderBackButton;
-},624,[118,130,12,625,626],"node_modules/react-navigation/src/views/Header/HeaderBackButton.js");
+},634,[118,130,12,635,636],"node_modules/react-navigation/src/views/Header/HeaderBackButton.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -69875,7 +69875,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }, _temp));
 
   exports.default = TouchableItem;
-},625,[118,130,12],"node_modules/react-navigation/src/views/TouchableItem.js");
+},635,[118,130,12],"node_modules/react-navigation/src/views/TouchableItem.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -69887,7 +69887,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "back-icon",
     "type": "png"
   });
-},626,[326],"node_modules/react-navigation/src/views/assets/back-icon.png");
+},636,[326],"node_modules/react-navigation/src/views/assets/back-icon.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70093,7 +70093,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = ModularHeaderBackButton;
-},627,[118,130,12,625,626],"node_modules/react-navigation/src/views/Header/ModularHeaderBackButton.js");
+},637,[118,130,12,635,636],"node_modules/react-navigation/src/views/Header/ModularHeaderBackButton.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70243,7 +70243,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     forCenter: forCenter,
     forRight: forRight
   };
-},628,[12,629],"node_modules/react-navigation/src/views/Header/HeaderStyleInterpolator.js");
+},638,[12,639],"node_modules/react-navigation/src/views/Header/HeaderStyleInterpolator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70293,7 +70293,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   exports.default = getSceneIndicesForInterpolationInputRange;
-},629,[],"node_modules/react-navigation/src/utils/getSceneIndicesForInterpolationInputRange.js");
+},639,[],"node_modules/react-navigation/src/utils/getSceneIndicesForInterpolationInputRange.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70412,7 +70412,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         height = _ref.height;
     return width > height;
   };
-},630,[118,130,12,499],"node_modules/react-navigation/src/views/withOrientation.js");
+},640,[118,130,12,499],"node_modules/react-navigation/src/views/withOrientation.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -70424,7 +70424,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "name": "back-icon-mask",
     "type": "png"
   });
-},631,[326],"node_modules/react-navigation/src/views/assets/back-icon-mask.png");
+},641,[326],"node_modules/react-navigation/src/views/assets/back-icon-mask.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70562,7 +70562,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       };
     };
   }
-},632,[],"node_modules/react-navigation/src/getChildEventSubscriber.js");
+},642,[],"node_modules/react-navigation/src/getChildEventSubscriber.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70653,7 +70653,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }, _temp));
 
   exports.default = SceneView;
-},633,[118,130,294],"node_modules/react-navigation/src/views/SceneView.js");
+},643,[118,130,294],"node_modules/react-navigation/src/views/SceneView.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70753,7 +70753,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     defaultTransitionConfig: defaultTransitionConfig,
     getTransitionConfig: getTransitionConfig
   };
-},634,[12,635,636],"node_modules/react-navigation/src/views/CardStack/TransitionConfigs.js");
+},644,[12,645,646],"node_modules/react-navigation/src/views/CardStack/TransitionConfigs.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70927,7 +70927,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     forFade: forFade,
     canUseNativeDriver: canUseNativeDriver
   };
-},635,[12,629],"node_modules/react-navigation/src/views/CardStack/CardStackStyleInterpolator.js");
+},645,[12,639],"node_modules/react-navigation/src/views/CardStack/CardStackStyleInterpolator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -70948,7 +70948,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return false;
   };
-},636,[12],"node_modules/react-navigation/src/utils/ReactNativeFeatures.js");
+},646,[12],"node_modules/react-navigation/src/utils/ReactNativeFeatures.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -71276,7 +71276,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = Transitioner;
-},637,[118,130,12,610,638],"node_modules/react-navigation/src/views/Transitioner.js");
+},647,[118,130,12,620,648],"node_modules/react-navigation/src/views/Transitioner.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -71439,7 +71439,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return scenes;
   }
-},638,[610,639],"node_modules/react-navigation/src/views/ScenesReducer.js");
+},648,[620,649],"node_modules/react-navigation/src/views/ScenesReducer.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -71479,7 +71479,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   module.exports = shallowEqual;
-},639,[],"node_modules/react-navigation/src/utils/shallowEqual.js");
+},649,[],"node_modules/react-navigation/src/utils/shallowEqual.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72055,7 +72055,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       getScreenConfig: _getScreenConfigDeprecated2.default
     };
   };
-},640,[641,608,643,644,611,646,647,610,648],"node_modules/react-navigation/src/routers/StackRouter.js");
+},650,[651,618,653,654,621,656,657,620,658],"node_modules/react-navigation/src/routers/StackRouter.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   var isarray = _require(_dependencyMap[0], 'isarray');
 
@@ -72346,12 +72346,12 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return stringToRegexp(path, keys, options);
   }
-},641,[642],"node_modules/path-to-regexp/index.js");
+},651,[652],"node_modules/path-to-regexp/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = Array.isArray || function (arr) {
     return Object.prototype.toString.call(arr) == '[object Array]';
   };
-},642,[],"node_modules/path-to-regexp/node_modules/isarray/index.js");
+},652,[],"node_modules/path-to-regexp/node_modules/isarray/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72436,7 +72436,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       return outputConfig;
     };
   };
-},643,[610,644,609,645,632],"node_modules/react-navigation/src/routers/createConfigGetter.js");
+},653,[620,654,619,655,642],"node_modules/react-navigation/src/routers/createConfigGetter.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72470,7 +72470,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return routeConfig;
   }
-},644,[610],"node_modules/react-navigation/src/routers/getScreenForRouteName.js");
+},654,[620],"node_modules/react-navigation/src/routers/getScreenForRouteName.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72502,7 +72502,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       })), ['}']).join('\n'));
     }
   };
-},645,[],"node_modules/react-navigation/src/routers/validateScreenOptions.js");
+},655,[],"node_modules/react-navigation/src/routers/validateScreenOptions.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72540,7 +72540,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   exports.default = validateRouteConfigMap;
-},646,[610],"node_modules/react-navigation/src/routers/validateRouteConfigMap.js");
+},656,[620],"node_modules/react-navigation/src/routers/validateRouteConfigMap.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72555,7 +72555,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   exports.default = function () {
     return (0, _invariant2.default)(false, '`getScreenConfig` has been replaced with `getScreenOptions`');
   };
-},647,[610],"node_modules/react-navigation/src/routers/getScreenConfigDeprecated.js");
+},657,[620],"node_modules/react-navigation/src/routers/getScreenConfigDeprecated.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72573,7 +72573,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   function generateKey() {
     return uniqueBaseId + "-" + uuidCount++;
   }
-},648,[],"node_modules/react-navigation/src/routers/KeyGenerator.js");
+},658,[],"node_modules/react-navigation/src/routers/KeyGenerator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72618,7 +72618,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     });
     return (0, _createNavigationContainer2.default)(navigator);
   };
-},649,[118,650,651,606,612],"node_modules/react-navigation/src/navigators/SwitchNavigator.js");
+},659,[118,660,661,616,622],"node_modules/react-navigation/src/navigators/SwitchNavigator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -72962,7 +72962,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       getScreenConfig: _getScreenConfigDeprecated2.default
     };
   };
-},650,[610,644,643,608,646,647],"node_modules/react-navigation/src/routers/SwitchRouter.js");
+},660,[620,654,653,618,656,657],"node_modules/react-navigation/src/routers/SwitchRouter.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -73047,7 +73047,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }(_react3.default.Component));
 
   exports.default = (0, _withCachedChildNavigation2.default)(SwitchContainer);
-},651,[118,130,633,652],"node_modules/react-navigation/src/views/SwitchView/SwitchView.js");
+},661,[118,130,643,662],"node_modules/react-navigation/src/views/SwitchView/SwitchView.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -73194,7 +73194,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       return _class;
     }(_react3.default.PureComponent), _class.displayName = "withCachedChildNavigation(" + displayName + ")", _temp2));
   }
-},652,[118,130,609,632],"node_modules/react-navigation/src/withCachedChildNavigation.js");
+},662,[118,130,619,642],"node_modules/react-navigation/src/withCachedChildNavigation.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -73296,7 +73296,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     Default: _reactNative.Platform.OS === 'ios' ? Presets.iOSBottomTabs : Presets.AndroidTopTabs
   };
   exports.default = TabNavigator;
-},653,[118,12,612,606,654,655,668,670],"node_modules/react-navigation/src/navigators/TabNavigator.js");
+},663,[118,12,622,616,664,665,678,680],"node_modules/react-navigation/src/navigators/TabNavigator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -73620,7 +73620,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       getScreenConfig: _getScreenConfigDeprecated2.default
     };
   };
-},654,[610,644,643,608,646,647],"node_modules/react-navigation/src/routers/TabRouter.js");
+},664,[620,654,653,618,656,657],"node_modules/react-navigation/src/routers/TabRouter.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -73889,7 +73889,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       flex: 1
     }
   });
-},655,[118,130,12,656,621,666,652],"node_modules/react-navigation/src/views/TabView/TabView.js");
+},665,[118,130,12,666,631,676,662],"node_modules/react-navigation/src/views/TabView/TabView.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = {
     get TabViewAnimated() {
@@ -73921,7 +73921,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }
 
   };
-},656,[657,661,660,659,662,663,665],"node_modules/react-native-tab-view/src/index.js");
+},666,[667,671,670,669,672,673,675],"node_modules/react-native-tab-view/src/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -74201,7 +74201,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},657,[118,130,294,12,658,659,660,661],"node_modules/react-native-tab-view/src/TabViewAnimated.js");
+},667,[118,130,294,12,668,669,670,671],"node_modules/react-native-tab-view/src/TabViewAnimated.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -74255,7 +74255,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     useNativeDriver: _propTypes2.default.bool,
     children: _propTypes2.default.node.isRequired
   };
-},658,[294,12],"node_modules/react-native-tab-view/src/TabViewPropTypes.js");
+},668,[294,12],"node_modules/react-native-tab-view/src/TabViewPropTypes.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -74454,7 +74454,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},659,[118,130,12,658],"node_modules/react-native-tab-view/src/TabViewPagerAndroid.js");
+},669,[118,130,12,668],"node_modules/react-native-tab-view/src/TabViewPagerAndroid.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -74679,7 +74679,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},660,[118,130,12,658],"node_modules/react-native-tab-view/src/TabViewPagerScroll.js");
+},670,[118,130,12,668],"node_modules/react-native-tab-view/src/TabViewPagerScroll.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -74951,7 +74951,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       alignItems: 'stretch'
     }
   });
-},661,[118,130,294,12,658],"node_modules/react-native-tab-view/src/TabViewPagerPan.js");
+},671,[118,130,294,12,668],"node_modules/react-native-tab-view/src/TabViewPagerPan.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -75203,7 +75203,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       alignItems: 'stretch'
     }
   });
-},662,[118,130,294,12,658],"node_modules/react-native-tab-view/src/TabViewPagerExperimental.js");
+},672,[118,130,294,12,668],"node_modules/react-native-tab-view/src/TabViewPagerExperimental.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -75825,7 +75825,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       height: 2
     }
   });
-},663,[118,130,294,12,664,658],"node_modules/react-native-tab-view/src/TabBar.js");
+},673,[118,130,294,12,674,668],"node_modules/react-native-tab-view/src/TabBar.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -75969,7 +75969,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }, _temp2));
 
   exports.default = TouchableItem;
-},664,[118,130,294,12],"node_modules/react-native-tab-view/src/TouchableItem.js");
+},674,[118,130,294,12],"node_modules/react-native-tab-view/src/TouchableItem.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -76051,7 +76051,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       });
     };
   }
-},665,[118,130],"node_modules/react-native-tab-view/src/SceneMap.js");
+},675,[118,130],"node_modules/react-native-tab-view/src/SceneMap.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -76208,7 +76208,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = (0, _reactLifecyclesCompat2.default)(ResourceSavingSceneView);
-},666,[118,130,12,294,667,633],"node_modules/react-navigation/src/views/ResourceSavingSceneView.js");
+},676,[118,130,12,294,677,643],"node_modules/react-navigation/src/views/ResourceSavingSceneView.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -76284,7 +76284,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   module.exports = polyfill;
-},667,[],"node_modules/react-lifecycles-compat/react-lifecycles-compat.cjs.js");
+},677,[],"node_modules/react-lifecycles-compat/react-lifecycles-compat.cjs.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -76504,7 +76504,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       backgroundColor: 'transparent'
     }
   });
-},668,[118,130,12,656,669],"node_modules/react-navigation/src/views/TabView/TabBarTop.js");
+},678,[118,130,12,666,679],"node_modules/react-navigation/src/views/TabView/TabBarTop.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -76654,7 +76654,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       width: '100%'
     }
   });
-},669,[118,130,12],"node_modules/react-navigation/src/views/TabView/TabBarIcon.js");
+},679,[118,130,12],"node_modules/react-navigation/src/views/TabView/TabBarIcon.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -77098,7 +77098,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = (0, _withOrientation2.default)(TabBarBottom);
-},670,[118,130,12,621,669,608,630],"node_modules/react-navigation/src/views/TabView/TabBarBottom.js");
+},680,[118,130,12,631,679,618,640],"node_modules/react-navigation/src/views/TabView/TabBarBottom.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -77265,7 +77265,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   };
 
   exports.default = DrawerNavigator;
-},671,[118,12,621,612,606,654,672,673,678],"node_modules/react-navigation/src/navigators/DrawerNavigator.js");
+},681,[118,12,631,622,616,664,682,683,688],"node_modules/react-navigation/src/navigators/DrawerNavigator.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -77356,7 +77356,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }(_react3.default.PureComponent));
 
   exports.default = (0, _withCachedChildNavigation2.default)(DrawerScreen);
-},672,[118,130,633,652],"node_modules/react-navigation/src/views/Drawer/DrawerScreen.js");
+},682,[118,130,643,662],"node_modules/react-navigation/src/views/Drawer/DrawerScreen.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -77611,7 +77611,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }(_react3.default.PureComponent));
 
   exports.default = DrawerView;
-},673,[118,130,12,674,609,677,632],"node_modules/react-navigation/src/views/Drawer/DrawerView.js");
+},683,[118,130,12,684,619,687,642],"node_modules/react-navigation/src/views/Drawer/DrawerView.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -77628,7 +77628,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   exports.default = _reactNativeDrawerLayout2.default;
-},674,[675],"node_modules/react-native-drawer-layout-polyfill/dist/index.js");
+},684,[685],"node_modules/react-native-drawer-layout-polyfill/dist/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78076,7 +78076,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       zIndex: 1000
     }
   });
-},675,[118,676,12],"node_modules/react-native-drawer-layout/dist/DrawerLayout.js");
+},685,[118,686,12],"node_modules/react-native-drawer-layout/dist/DrawerLayout.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, '__esModule', {
     value: true
@@ -78092,7 +78092,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }
 
   module.exports = exports.default;
-},676,[12],"node_modules/react-native-dismiss-keyboard/dist/index.js");
+},686,[12],"node_modules/react-native-dismiss-keyboard/dist/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78290,7 +78290,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       flex: 1
     }
   });
-},677,[118,130,12,621,652,608,610],"node_modules/react-navigation/src/views/Drawer/DrawerSidebar.js");
+},687,[118,130,12,631,662,618,620],"node_modules/react-navigation/src/views/Drawer/DrawerSidebar.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78457,7 +78457,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 
   exports.default = DrawerNavigatorItems;
-},678,[118,12,621,625],"node_modules/react-navigation/src/views/Drawer/DrawerNavigatorItems.js");
+},688,[118,12,631,635],"node_modules/react-navigation/src/views/Drawer/DrawerNavigatorItems.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78549,7 +78549,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return (0, _hoistNonReactStatics2.default)(ComponentWithNavigation, Component);
   }
-},679,[118,130,294,499],"node_modules/react-navigation/src/views/withNavigation.js");
+},689,[118,130,294,499],"node_modules/react-navigation/src/views/withNavigation.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78684,7 +78684,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     return (0, _hoistNonReactStatics2.default)(ComponentWithNavigationFocus, Component);
   }
-},680,[118,130,294,499,610],"node_modules/react-navigation/src/views/withNavigationFocus.js");
+},690,[118,130,294,499,620],"node_modules/react-navigation/src/views/withNavigationFocus.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -78708,7 +78708,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var MineMainC = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_MineMain2.default);
     exports.default = MineMainC;
-},681,[494,682],"src/containers/MineMainC.js");
+},691,[494,692],"src/containers/MineMainC.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78792,7 +78792,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   exports.default = MineMain;
   ;
-},682,[118,130,12],"src/components/Mine/MineMain.js");
+},692,[118,130,12],"src/components/Mine/MineMain.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -78816,7 +78816,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var StudyMainC = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_StudyMain2.default);
     exports.default = StudyMainC;
-},683,[494,684],"src/containers/StudyMainC.js");
+},693,[494,694],"src/containers/StudyMainC.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78900,7 +78900,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   exports.default = StudyMain;
   ;
-},684,[118,130,12],"src/components/Study/StudyMain.js");
+},694,[118,130,12],"src/components/Study/StudyMain.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -78928,7 +78928,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var WorkMainC = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_WorkMain2.default);
     exports.default = WorkMainC;
-},685,[494,686],"src/containers/WorkMainC.js");
+},695,[494,696],"src/containers/WorkMainC.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -79032,7 +79032,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   var styles = _reactNative.StyleSheet.create({
     homeMenu: {}
   });
-},686,[118,130,12,687],"src/components/Work/WorkMain.js");
+},696,[118,130,12,697],"src/components/Work/WorkMain.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -79098,31 +79098,48 @@ __d(function (global, _require, module, exports, _dependencyMap) {
           {
             style: {
               width: global.ScreenWidth / menuRows,
-              height: global.ScreenWidth / menuRows,
-              alignItems: 'center'
+              height: global.ScreenWidth / menuRows / 2 + 28
             },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 78
-            }
-          },
-          _react3.default.createElement(_reactNative.Image, {
-            source: icon,
-            resizeMode: 'contain',
             __source: {
               fileName: _jsxFileName,
               lineNumber: 79
             }
-          }),
+          },
           _react3.default.createElement(
-            _reactNative.Text,
+            _reactNative.View,
             {
+              style: {
+                alignItems: 'center'
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 80
+              }
+            },
+            _react3.default.createElement(_reactNative.Image, {
+              source: icon,
+              resizeMode: 'contain',
+              style: {
+                height: global.ScreenWidth / menuRows / 2
+              },
               __source: {
                 fileName: _jsxFileName,
                 lineNumber: 81
               }
-            },
-            "title"
+            }),
+            _react3.default.createElement(
+              _reactNative.Text,
+              {
+                style: {
+                  marginTop: 8
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 83
+                }
+              },
+              title
+            )
           )
         );
       };
@@ -79167,11 +79184,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               var item = _ref.item;
               return _this2._renderMenuItem(item);
             },
-            horizontal: true,
             keyExtractor: function keyExtractor(item, index) {
               return index + '';
             },
             scrollEnabled: false,
+            numColumns: menuRows,
+            columnWrapperStyle: {
+              marginTop: 8
+            },
             __source: {
               fileName: _jsxFileName,
               lineNumber: 48
@@ -79187,7 +79207,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             style: this.props.style,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 63
+              lineNumber: 64
             }
           },
           _react3.default.createElement(
@@ -79195,9 +79215,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             {
               pagingEnabled: true,
               horizontal: true,
+              showsHorizontalScrollIndicator: false,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 64
+                lineNumber: 65
               }
             },
             menuViews
@@ -79216,7 +79237,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     menuView: {},
     itemView: {}
   });
-},687,[118,130,12],"src/components/Work/HomeMenu.js");
+},697,[118,130,12],"src/components/Work/HomeMenu.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -79295,7 +79316,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }(_react2.PureComponent));
 
     exports.default = TabBarItem;
-},688,[118,130,12],"src/components/common/TabBarItem.js");
+},698,[118,130,12],"src/components/common/TabBarItem.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
    module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
       "__packager_asset": true,
@@ -79307,7 +79328,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       "name": "tabbar_homepage",
       "type": "png"
    });
-},689,[326],"src/img/tabbar/tabbar_homepage.png");
+},699,[326],"src/img/tabbar/tabbar_homepage.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
    module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
       "__packager_asset": true,
@@ -79319,7 +79340,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       "name": "tabbar_homepage_selected",
       "type": "png"
    });
-},690,[326],"src/img/tabbar/tabbar_homepage_selected.png");
+},700,[326],"src/img/tabbar/tabbar_homepage_selected.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
    module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
       "__packager_asset": true,
@@ -79331,7 +79352,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       "name": "tabbar_merchant",
       "type": "png"
    });
-},691,[326],"src/img/tabbar/tabbar_merchant.png");
+},701,[326],"src/img/tabbar/tabbar_merchant.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
    module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
       "__packager_asset": true,
@@ -79343,7 +79364,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       "name": "tabbar_merchant_selected",
       "type": "png"
    });
-},692,[326],"src/img/tabbar/tabbar_merchant_selected.png");
+},702,[326],"src/img/tabbar/tabbar_merchant_selected.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
    module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
       "__packager_asset": true,
@@ -79355,7 +79376,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       "name": "tabbar_order",
       "type": "png"
    });
-},693,[326],"src/img/tabbar/tabbar_order.png");
+},703,[326],"src/img/tabbar/tabbar_order.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
    module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
       "__packager_asset": true,
@@ -79367,7 +79388,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       "name": "tabbar_order_selected",
       "type": "png"
    });
-},694,[326],"src/img/tabbar/tabbar_order_selected.png");
+},704,[326],"src/img/tabbar/tabbar_order_selected.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
     var _reactNative = _require(_dependencyMap[0], "react-native");
 
@@ -79382,7 +79403,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     global.ScreenWidth = _reactNative.Dimensions.get('window').width;
     global.ScreenHeight = _reactNative.Dimensions.get('window').height;
-},695,[12],"src/contansts/global.js");
+},705,[12],"src/contansts/global.js");
 require(52);
 require(11);
 //# sourceMappingURL=index.map
