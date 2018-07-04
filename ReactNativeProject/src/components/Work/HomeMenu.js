@@ -6,13 +6,18 @@ import { View,
         TouchableOpacity,
         Image,
         Text,
-             } from 'react-native';
 
+             } from 'react-native';
+import PageControl from 'react-native-page-control';
 
 export default class HomeMenu extends Component {
 
   constructor(props){
     super(props)
+
+    this.state = {
+      currentPage:0,
+    }
   }
   
   render() {
@@ -46,10 +51,11 @@ export default class HomeMenu extends Component {
 
       let menuView = (
           <FlatList key={index} 
-                    style={styles.menuView && {backgroundColor: global.randomColor(),width:global.ScreenWidth}}
+                    style={styles.menuView && {width:global.ScreenWidth}}
                     data={menuViewData}
                     renderItem={({item})=>this._renderMenuItem(item)}
                     keyExtractor={(item,index)=>index+''}
+                    listKey={(item,index)=>index+''}
                     scrollEnabled={false}
                     numColumns={menuRows}
                     columnWrapperStyle={{marginTop: 8}}
@@ -62,11 +68,31 @@ export default class HomeMenu extends Component {
 
     return (
       <View style={this.props.style}>
-        <ScrollView pagingEnabled={true} horizontal={true} showsHorizontalScrollIndicator={false}>
+        <ScrollView pagingEnabled={true} horizontal={true} showsHorizontalScrollIndicator={false} onScroll={(e)=>this._onScroll(e)}>
             {menuViews}
         </ScrollView>
+        <PageControl
+          style={{alignSelf: 'center', marginTop: 8,marginBottom: 8,}}
+          numberOfPages={Math.ceil(menuViewCount)}
+          currentPage={this.state.currentPage}
+          hidesForSinglePage
+          pageIndicatorTintColor='gray'
+          currentPageIndicatorTintColor='#06C1AE'
+          indicatorStyle={{borderRadius: 5}}
+          currentIndicatorStyle={{borderRadius: 5}}
+          indicatorSize={{width:8, height:8}}
+          onPageIndicatorPress={this.onItemTap}
+          />
       </View>
     )
+  }
+
+  _onScroll(e){
+    let mul = e.nativeEvent.contentOffset.x/global.ScreenWidth;
+
+    this.setState({
+      currentPage:Math.round(mul)
+    })
   }
 
   _renderMenuItem = (item)=>{

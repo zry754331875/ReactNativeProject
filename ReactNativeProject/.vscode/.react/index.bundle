@@ -65903,66 +65903,87 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         value: true
     });
 
+    var _handleActions;
+
+    var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
     var _reduxActions = _require(_dependencyMap[0], "redux-actions");
+
+    var _WorkMainTypes = _require(_dependencyMap[1], "../contansts/types/WorkMainTypes");
+
+    var _WorkMainTypes2 = _interopRequireDefault(_WorkMainTypes);
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
     var defaultState = {
         menuData: [{
             title: '美食',
-            icon: _require(_dependencyMap[1], '../img/home/icon_homepage_food_category.png')
+            icon: _require(_dependencyMap[2], '../img/home/icon_homepage_food_category.png')
         }, {
             title: '电影',
-            icon: _require(_dependencyMap[2], '../img/home/icon_homepage_movie_category.png')
+            icon: _require(_dependencyMap[3], '../img/home/icon_homepage_movie_category.png')
         }, {
             title: '酒店',
-            icon: _require(_dependencyMap[3], '../img/home/icon_homepage_hotel_category.png')
+            icon: _require(_dependencyMap[4], '../img/home/icon_homepage_hotel_category.png')
         }, {
             title: 'KTV',
-            icon: _require(_dependencyMap[4], '../img/home/icon_homepage_ktv_category.png')
+            icon: _require(_dependencyMap[5], '../img/home/icon_homepage_ktv_category.png')
         }, {
             title: '优惠买单',
-            icon: _require(_dependencyMap[5], '../img/home/icon_homepage_default.png')
+            icon: _require(_dependencyMap[6], '../img/home/icon_homepage_default.png')
         }, {
             title: '周边游',
-            icon: _require(_dependencyMap[6], '../img/home/icon_homepage_foottreat_category.png')
+            icon: _require(_dependencyMap[7], '../img/home/icon_homepage_foottreat_category.png')
         }, {
             title: '生活服务',
-            icon: _require(_dependencyMap[7], '../img/home/icon_homepage_life_service_category.png')
+            icon: _require(_dependencyMap[8], '../img/home/icon_homepage_life_service_category.png')
         }, {
             title: '休闲娱乐',
-            icon: _require(_dependencyMap[8], '../img/home/icon_homepage_entertainment_category.png')
+            icon: _require(_dependencyMap[9], '../img/home/icon_homepage_entertainment_category.png')
         }, {
             title: '丽人/美发',
-            icon: _require(_dependencyMap[9], '../img/home/icon_homepage_beauty_category.png')
+            icon: _require(_dependencyMap[10], '../img/home/icon_homepage_beauty_category.png')
         }, {
             title: '购物',
-            icon: _require(_dependencyMap[10], '../img/home/icon_homepage_shopping_category.png')
+            icon: _require(_dependencyMap[11], '../img/home/icon_homepage_shopping_category.png')
         }, {
             title: '丽人/美发',
-            icon: _require(_dependencyMap[9], '../img/home/icon_homepage_beauty_category.png')
+            icon: _require(_dependencyMap[10], '../img/home/icon_homepage_beauty_category.png')
         }, {
             title: '电影',
-            icon: _require(_dependencyMap[2], '../img/home/icon_homepage_movie_category.png')
+            icon: _require(_dependencyMap[3], '../img/home/icon_homepage_movie_category.png')
         }, {
             title: '周边游',
-            icon: _require(_dependencyMap[6], '../img/home/icon_homepage_foottreat_category.png')
+            icon: _require(_dependencyMap[7], '../img/home/icon_homepage_foottreat_category.png')
         }, {
             title: '酒店',
-            icon: _require(_dependencyMap[3], '../img/home/icon_homepage_hotel_category.png')
+            icon: _require(_dependencyMap[4], '../img/home/icon_homepage_hotel_category.png')
         }, {
             title: '优惠买单',
-            icon: _require(_dependencyMap[5], '../img/home/icon_homepage_default.png')
+            icon: _require(_dependencyMap[6], '../img/home/icon_homepage_default.png')
         }, {
             title: '休闲娱乐',
-            icon: _require(_dependencyMap[8], '../img/home/icon_homepage_entertainment_category.png')
+            icon: _require(_dependencyMap[9], '../img/home/icon_homepage_entertainment_category.png')
         }, {
             title: 'KTV',
-            icon: _require(_dependencyMap[4], '../img/home/icon_homepage_ktv_category.png')
+            icon: _require(_dependencyMap[5], '../img/home/icon_homepage_ktv_category.png')
         }],
         menuRowCount: 2,
-        menuRows: 5
+        menuRows: 5,
+        menuItemData: []
     };
-    exports.default = (0, _reduxActions.handleActions)({}, defaultState);
-},602,[520,603,604,605,606,607,608,609,610,611,612],"src/reducers/WorkMainR.js");
+    exports.default = (0, _reduxActions.handleActions)((_handleActions = {}, _defineProperty(_handleActions, _WorkMainTypes2.default.FETCH_MENU_ITEMS_START, function (state, action) {
+        return _extends({}, state);
+    }), _defineProperty(_handleActions, _WorkMainTypes2.default.FETCH_MENU_ITEMS_SUCCESS, function (state, action) {
+        return _extends({}, state, {
+            menuItemData: action.payload
+        });
+    }), _defineProperty(_handleActions, _WorkMainTypes2.default.FETCH_MENU_ITEMS_ERROR, function (state, action) {
+        return _extends({}, state);
+    }), _handleActions), defaultState);
+},602,[520,710,603,604,605,606,607,608,609,610,611,612],"src/reducers/WorkMainR.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -78912,23 +78933,30 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _WorkMain2 = _interopRequireDefault(_WorkMain);
 
+    var _WorkMainActions = _require(_dependencyMap[2], "../actions/WorkMainActions");
+
     function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
     var mapStateToProps = function mapStateToProps(state, ownProps) {
         return {
             menuData: state.work.menuData,
             menuRowCount: state.work.menuRowCount,
-            menuRows: state.work.menuRows
+            menuRows: state.work.menuRows,
+            menuItemData: state.work.menuItemData
         };
     };
 
     var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-        return {};
+        return {
+            fetchMenuItems: function fetchMenuItems() {
+                dispatch((0, _WorkMainActions.fetchMenuItems)());
+            }
+        };
     };
 
     var WorkMainC = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_WorkMain2.default);
     exports.default = WorkMainC;
-},695,[494,696],"src/containers/WorkMainC.js");
+},695,[494,696,709],"src/containers/WorkMainC.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -78987,38 +79015,128 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     function WorkMain(props) {
       _classCallCheck(this, WorkMain);
 
-      return _possibleConstructorReturn(this, (WorkMain.__proto__ || Object.getPrototypeOf(WorkMain)).call(this, props));
-    }
+      var _this = _possibleConstructorReturn(this, (WorkMain.__proto__ || Object.getPrototypeOf(WorkMain)).call(this, props));
 
-    _createClass(WorkMain, [{
-      key: "render",
-      value: function render() {
+      _this._ListHeaderComponent = function () {
         return _react3.default.createElement(
-          _reactNative.ScrollView,
+          _reactNative.View,
           {
-            style: this.props.style,
+            style: styles.gridViewHeader,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 22
+              lineNumber: 40
             }
           },
           _react3.default.createElement(_HomeMenu2.default, {
             style: styles.homeMenu,
-            menuData: this.props.menuData,
-            menuRowCount: this.props.menuRowCount,
-            menuRows: this.props.menuRows,
+            menuData: _this.props.menuData,
+            menuRowCount: _this.props.menuRowCount,
+            menuRows: _this.props.menuRows,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 23
+              lineNumber: 41
             }
-          })
+          }),
+          _react3.default.createElement(_reactNative.View, {
+            style: {
+              backgroundColor: 'rgb(235,235,241)',
+              height: 15
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 43
+            }
+          }),
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: {
+                height: 30,
+                marginLeft: 8,
+                justifyContent: 'center'
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 44
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 45
+                }
+              },
+              "\u731C\u4F60\u559C\u6B22"
+            )
+          )
         );
+      };
+
+      _this._renderItem = function (item) {
+        var brandname = item.brandname,
+            imgurl = item.imgurl,
+            title = item.title,
+            price = item.price;
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 58
+            }
+          },
+          _react3.default.createElement(
+            _reactNative.Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 59
+              }
+            },
+            title
+          )
+        );
+      };
+
+      return _this;
+    }
+
+    _createClass(WorkMain, [{
+      key: "componentWillMount",
+      value: function componentWillMount() {
+        this.props.fetchMenuItems();
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this2 = this;
+
+        return _react3.default.createElement(_reactNative.FlatList, {
+          renderItem: function renderItem(_ref) {
+            var item = _ref.item;
+            return _this2._renderItem(item);
+          },
+          data: this.props.menuItemData,
+          keyExtractor: function keyExtractor(item, index) {
+            return index + '';
+          },
+          listKey: function listKey(item, index) {
+            return index + '';
+          },
+          ListHeaderComponent: this._ListHeaderComponent,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          }
+        });
       }
     }]);
 
     return WorkMain;
-  }(_react2.PureComponent), _class.navigationOptions = function (_ref) {
-    var navigation = _ref.navigation;
+  }(_react2.PureComponent), _class.navigationOptions = function (_ref2) {
+    var navigation = _ref2.navigation;
     return {
       headerStyle: {
         backgroundColor: 'white'
@@ -79030,7 +79148,12 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   ;
 
   var styles = _reactNative.StyleSheet.create({
-    homeMenu: {}
+    homeMenu: {
+      backgroundColor: 'white'
+    },
+    gridViewHeader: {
+      backgroundColor: 'white'
+    }
   });
 },696,[118,130,12,697],"src/components/Work/WorkMain.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
@@ -79051,6 +79174,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
   var _reactNative = _require(_dependencyMap[2], "react-native");
+
+  var _reactNativePageControl = _require(_dependencyMap[3], "react-native-page-control");
+
+  var _reactNativePageControl2 = _interopRequireDefault(_reactNativePageControl);
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79102,7 +79229,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 79
+              lineNumber: 105
             }
           },
           _react3.default.createElement(
@@ -79113,7 +79240,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 80
+                lineNumber: 106
               }
             },
             _react3.default.createElement(_reactNative.Image, {
@@ -79124,7 +79251,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 81
+                lineNumber: 107
               }
             }),
             _react3.default.createElement(
@@ -79135,7 +79262,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 83
+                  lineNumber: 109
                 }
               },
               title
@@ -79144,6 +79271,9 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         );
       };
 
+      _this.state = {
+        currentPage: 0
+      };
       return _this;
     }
 
@@ -79176,7 +79306,6 @@ __d(function (global, _require, module, exports, _dependencyMap) {
           var menuView = _react3.default.createElement(_reactNative.FlatList, {
             key: index,
             style: styles.menuView && {
-              backgroundColor: global.randomColor(),
               width: global.ScreenWidth
             },
             data: menuViewData,
@@ -79187,6 +79316,9 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             keyExtractor: function keyExtractor(item, index) {
               return index + '';
             },
+            listKey: function listKey(item, index) {
+              return index + '';
+            },
             scrollEnabled: false,
             numColumns: menuRows,
             columnWrapperStyle: {
@@ -79194,7 +79326,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 48
+              lineNumber: 53
             }
           });
 
@@ -79207,7 +79339,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             style: this.props.style,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 64
+              lineNumber: 70
             }
           },
           _react3.default.createElement(
@@ -79216,14 +79348,52 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               pagingEnabled: true,
               horizontal: true,
               showsHorizontalScrollIndicator: false,
+              onScroll: function onScroll(e) {
+                return _this2._onScroll(e);
+              },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 65
+                lineNumber: 71
               }
             },
             menuViews
-          )
+          ),
+          _react3.default.createElement(_reactNativePageControl2.default, {
+            style: {
+              alignSelf: 'center',
+              marginTop: 8,
+              marginBottom: 8
+            },
+            numberOfPages: Math.ceil(menuViewCount),
+            currentPage: this.state.currentPage,
+            hidesForSinglePage: true,
+            pageIndicatorTintColor: "gray",
+            currentPageIndicatorTintColor: "#06C1AE",
+            indicatorStyle: {
+              borderRadius: 5
+            },
+            currentIndicatorStyle: {
+              borderRadius: 5
+            },
+            indicatorSize: {
+              width: 8,
+              height: 8
+            },
+            onPageIndicatorPress: this.onItemTap,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 74
+            }
+          })
         );
+      }
+    }, {
+      key: "_onScroll",
+      value: function _onScroll(e) {
+        var mul = e.nativeEvent.contentOffset.x / global.ScreenWidth;
+        this.setState({
+          currentPage: Math.round(mul)
+        });
       }
     }]);
 
@@ -79237,7 +79407,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     menuView: {},
     itemView: {}
   });
-},697,[118,130,12],"src/components/Work/HomeMenu.js");
+},697,[118,130,12,707],"src/components/Work/HomeMenu.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -79404,6 +79574,218 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     global.ScreenWidth = _reactNative.Dimensions.get('window').width;
     global.ScreenHeight = _reactNative.Dimensions.get('window').height;
 },705,[12],"src/contansts/global.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  var PageControl = _require(_dependencyMap[0], './PageControl');
+
+  module.exports = PageControl;
+},707,[708],"node_modules/react-native-page-control/index.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    var _jsxFileName = "/Users/zry/Documents/ReactNativeProject/ReactNativeProject/node_modules/react-native-page-control/PageControl.js";
+
+    var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+    function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+    var React = _require(_dependencyMap[0], 'react');
+
+    var ReactNative = _require(_dependencyMap[1], 'react-native');
+
+    var assign = _require(_dependencyMap[2], 'object-assign');
+
+    var PropTypes = _require(_dependencyMap[3], 'prop-types');
+
+    var createReactClass = _require(_dependencyMap[4], 'create-react-class');
+
+    var StyleSheet = ReactNative.StyleSheet,
+        View = ReactNative.View,
+        TouchableWithoutFeedback = ReactNative.TouchableWithoutFeedback,
+        ViewPropTypes = ReactNative.ViewPropTypes;
+    var PageControl = createReactClass({
+        displayName: "PageControl",
+        propTypes: {
+            numberOfPages: PropTypes.number.isRequired,
+            currentPage: PropTypes.number,
+            hidesForSinglePage: PropTypes.bool,
+            pageIndicatorTintColor: PropTypes.string,
+            currentPageIndicatorTintColor: PropTypes.string,
+            indicatorSize: PropTypes.object,
+            indicatorStyle: ViewPropTypes.style,
+            currentIndicatorStyle: ViewPropTypes.style,
+            onPageIndicatorPress: PropTypes.func
+        },
+        getDefaultProps: function getDefaultProps() {
+            return {
+                numberOfPages: 0,
+                currentPage: 0,
+                hidesForSinglePage: false,
+                pageIndicatorTintColor: 'gray',
+                currentPageIndicatorTintColor: 'white',
+                indicatorSize: {
+                    width: 8,
+                    height: 8
+                },
+                indicatorStyle: {},
+                currentIndicatorStyle: {},
+                onPageIndicatorPress: function onPageIndicatorPress() {}
+            };
+        },
+        onPageIndicatorPress: function onPageIndicatorPress(idx) {
+            this.props.onPageIndicatorPress(idx);
+        },
+        render: function render() {
+            var _this = this;
+
+            var _props = this.props,
+                style = _props.style,
+                props = _objectWithoutProperties(_props, ["style"]);
+
+            var defaultStyle = {
+                height: this.props.indicatorSize.height
+            };
+            var indicatorItemStyle = {
+                width: this.props.indicatorSize.width,
+                height: this.props.indicatorSize.height,
+                borderRadius: this.props.indicatorSize.height / 2,
+                marginLeft: 5,
+                marginRight: 5
+            };
+
+            var indicatorStyle = _extends({}, indicatorItemStyle, this.props.indicatorStyle, {
+                backgroundColor: this.props.pageIndicatorTintColor
+            });
+
+            var currentIndicatorStyle = _extends({}, indicatorItemStyle, this.props.currentIndicatorStyle, {
+                backgroundColor: this.props.currentPageIndicatorTintColor
+            });
+
+            var pages = [];
+
+            for (var i = 0; i < this.props.numberOfPages; i++) {
+                pages.push(i);
+            }
+
+            return this.props.hidesForSinglePage && pages.length <= 1 ? null : React.createElement(
+                View,
+                {
+                    style: [styles.container, defaultStyle, style],
+                    __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 77
+                    }
+                },
+                pages.map(function (el, i) {
+                    return React.createElement(
+                        TouchableWithoutFeedback,
+                        {
+                            key: i,
+                            onPress: _this.onPageIndicatorPress.bind(_this, i),
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 78
+                            }
+                        },
+                        React.createElement(View, {
+                            style: i == _this.props.currentPage ? currentIndicatorStyle : indicatorStyle,
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 79
+                            }
+                        })
+                    );
+                })
+            );
+        }
+    });
+    var styles = StyleSheet.create({
+        container: {
+            backgroundColor: 'transparent',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'row'
+        }
+    });
+    module.exports = PageControl;
+},708,[118,12,120,294,330],"node_modules/react-native-page-control/PageControl.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.fetchMenuItems = fetchMenuItems;
+
+    var _reduxActions = _require(_dependencyMap[0], "redux-actions");
+
+    var _WorkMainTypes = _require(_dependencyMap[1], "../contansts/types/WorkMainTypes");
+
+    var _WorkMainTypes2 = _interopRequireDefault(_WorkMainTypes);
+
+    var _API = _require(_dependencyMap[2], "../common/API");
+
+    var _API2 = _interopRequireDefault(_API);
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function fetchMenuItems() {
+        var _this = this;
+
+        return function _callee(dispatch) {
+            var resopnse, json;
+            return regeneratorRuntime.async(function _callee$(_context) {
+                while (1) {
+                    switch (_context.prev = _context.next) {
+                        case 0:
+                            dispatch((0, _reduxActions.createAction)(_WorkMainTypes2.default.FETCH_MENU_ITEMS_START)());
+                            _context.prev = 1;
+                            _context.next = 4;
+                            return regeneratorRuntime.awrap(fetch(_API2.default.API_CAI_DAN));
+
+                        case 4:
+                            resopnse = _context.sent;
+                            _context.next = 7;
+                            return regeneratorRuntime.awrap(resopnse.json());
+
+                        case 7:
+                            json = _context.sent;
+                            console.log(json.data);
+                            dispatch((0, _reduxActions.createAction)(_WorkMainTypes2.default.FETCH_MENU_ITEMS_SUCCESS)(json.data));
+                            _context.next = 15;
+                            break;
+
+                        case 12:
+                            _context.prev = 12;
+                            _context.t0 = _context["catch"](1);
+                            dispatch((0, _reduxActions.createAction)(_WorkMainTypes2.default.FETCH_MENU_ITEMS_ERROR)(_context.t0));
+
+                        case 15:
+                        case "end":
+                            return _context.stop();
+                    }
+                }
+            }, null, _this, [[1, 12]]);
+        };
+    }
+},709,[520,710,711],"src/actions/WorkMainActions.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    var FETCH_MENU_ITEMS_START = 'FETCH_MENU_ITEMS_START';
+    var FETCH_MENU_ITEMS_SUCCESS = 'FETCH_MENU_ITEMS_SUCCESS';
+    var FETCH_MENU_ITEMS_ERROR = 'FETCH_MENU_ITEMS_ERROR';
+    exports.default = {
+        FETCH_MENU_ITEMS_START: FETCH_MENU_ITEMS_START,
+        FETCH_MENU_ITEMS_SUCCESS: FETCH_MENU_ITEMS_SUCCESS,
+        FETCH_MENU_ITEMS_ERROR: FETCH_MENU_ITEMS_ERROR
+    };
+},710,[],"src/contansts/types/WorkMainTypes.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    var API_CAI_DAN = 'http://api.meituan.com/group/v1/recommend/homepage/city/1?__skck=40aaaf01c2fc4801b9c059efcd7aa146&__skcy=mrUZYo7999nH8WgTicdfzaGjaSQ=&__skno=51156DC4-B59A-4108-8812-AD05BF227A47&__skts=1434530933.303717&__skua=bd6b6e8eadfad15571a15c3b9ef9199a&__vhost=api.mobile.meituan.com&ci=1&client=iphone&limit=40&movieBundleVersion=100&msid=48E2B810-805D-4821-9CDD-D5C9E01BC98A2015-06-17-14-50363&offset=0&position=39.983497,116.318042&userId=10086&userid=10086&utm_campaign=AgroupBgroupD100Fab_chunceshishuju__a__a___b1junglehomepagecatesort__b__leftflow___ab_gxhceshi__nostrategy__leftflow___ab_gxhceshi0202__b__a___ab_pindaochangsha__a__leftflow___ab_xinkeceshi__b__leftflow___ab_gxtest__gd__leftflow___ab_gxh_82__nostrategy__leftflow___ab_pindaoshenyang__a__leftflow___i_group_5_2_deallist_poitype__d__d___ab_b_food_57_purepoilist_extinfo__a__a___ab_trip_yidizhoubianyou__b__leftflow___ab_i_group_5_3_poidetaildeallist__a__b___ab_waimaizhanshi__b__b1___a20141120nanning__m1__leftflow___ab_pind';
+    exports.default = {
+        API_CAI_DAN: API_CAI_DAN
+    };
+},711,[],"src/common/API.js");
 require(52);
 require(11);
 //# sourceMappingURL=index.map

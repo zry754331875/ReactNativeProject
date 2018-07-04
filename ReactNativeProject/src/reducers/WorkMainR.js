@@ -1,5 +1,5 @@
 import { handleActions } from "redux-actions";
-
+import WorkMainTypes from "../contansts/types/WorkMainTypes";
 const defaultState = {
     menuData:[
         {title: '美食', icon: require('../img/home/icon_homepage_food_category.png')},
@@ -23,8 +23,25 @@ const defaultState = {
     ],
     menuRowCount:2,
     menuRows:5,
+    menuItemData:[]
 } 
 
 export default handleActions({
-
+    [WorkMainTypes.FETCH_MENU_ITEMS_START]:(state,action)=>{
+        return {
+            ...state
+        }
+    },
+    [WorkMainTypes.FETCH_MENU_ITEMS_SUCCESS]:(state,action)=>{
+        
+        return {
+            ...state,
+            menuItemData: action.payload,
+        }
+    },
+    [WorkMainTypes.FETCH_MENU_ITEMS_ERROR]:(state,action)=>{
+        return {
+            ...state
+        }
+    },
 },defaultState)
