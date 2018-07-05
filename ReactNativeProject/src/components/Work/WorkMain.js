@@ -89,6 +89,7 @@ const styles = StyleSheet.create({
     width: 110,
     height: 80,
     margin: 8,
+    borderRadius:3
   },
   Separator:{
     backgroundColor:'rgb(235,235,241)',

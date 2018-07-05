@@ -78902,38 +78902,211 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   var StudyMain = _wrapComponent("StudyMain")((_temp = _class = function (_PureComponent) {
     _inherits(StudyMain, _PureComponent);
 
-    function StudyMain() {
+    function StudyMain(props) {
       _classCallCheck(this, StudyMain);
 
-      return _possibleConstructorReturn(this, (StudyMain.__proto__ || Object.getPrototypeOf(StudyMain)).apply(this, arguments));
+      var _this = _possibleConstructorReturn(this, (StudyMain.__proto__ || Object.getPrototypeOf(StudyMain)).call(this, props));
+
+      _this._konPressonAni = function (index) {
+        _reactNative.Animated.timing(_this.state.topMouseAni, {
+          toValue: {
+            x: index * global.ScreenWidth / 3,
+            y: 0
+          },
+          duration: 300
+        }).start();
+      };
+
+      _this.state = {
+        topMouseAni: new _reactNative.Animated.ValueXY()
+      };
+      return _this;
     }
 
     _createClass(StudyMain, [{
+      key: "_topScrollViewItemOnPress",
+      value: function _topScrollViewItemOnPress(index) {
+        this.bottomScrollView.scrollTo({
+          x: index * global.ScreenWidth,
+          y: 0
+        });
+      }
+    }, {
       key: "render",
       value: function render() {
-        return _react3.default.createElement(_reactNative.View, {
-          style: {
-            backgroundColor: global.randomColor(),
-            flex: 1
+        var _this2 = this;
+
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            style: this.props.style,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 42
+            }
           },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 16
-          }
-        });
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: styles.topScrollView,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 43
+              }
+            },
+            _react3.default.createElement(_reactNative.FlatList, {
+              horizontal: true,
+              showsHorizontalScrollIndicator: false,
+              data: [{
+                key: '享美食'
+              }, {
+                key: '住酒店'
+              }, {
+                key: '爱玩乐'
+              }],
+              renderItem: function renderItem(_ref) {
+                var item = _ref.item,
+                    index = _ref.index;
+                return _react3.default.createElement(
+                  _reactNative.TouchableOpacity,
+                  {
+                    style: [styles.itemStyle, {
+                      width: global.ScreenWidth / 3
+                    }],
+                    onPress: _this2._topScrollViewItemOnPress.bind(_this2, index),
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 49
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 50
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        style: [{
+                          textAlign: 'center'
+                        }],
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 51
+                        }
+                      },
+                      item.key
+                    )
+                  )
+                );
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 44
+              }
+            }),
+            _react3.default.createElement(_reactNative.Animated.View, {
+              style: [styles.topMouse, {
+                width: global.ScreenWidth / 3,
+                transform: this.state.topMouseAni.getTranslateTransform()
+              }],
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 57
+              }
+            })
+          ),
+          _react3.default.createElement(
+            _reactNative.ScrollView,
+            {
+              ref: function ref(c) {
+                return _this2.bottomScrollView = c;
+              },
+              style: [styles.bottomScrollView, {
+                height: global.ScreenHeight - 35
+              }],
+              pagingEnabled: true,
+              horizontal: true,
+              onScroll: function onScroll(event) {
+                var mul = event.nativeEvent.contentOffset.x / global.ScreenWidth;
+
+                _this2._konPressonAni(mul);
+              },
+              scrollEventThrottle: 16,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 59
+              }
+            },
+            _react3.default.createElement(_reactNative.View, {
+              style: {
+                backgroundColor: global.randomColor(),
+                width: global.ScreenWidth,
+                height: styles.bottomScrollView.height
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 64
+              }
+            }),
+            _react3.default.createElement(_reactNative.View, {
+              style: {
+                backgroundColor: global.randomColor(),
+                width: global.ScreenWidth,
+                height: styles.bottomScrollView.height
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 65
+              }
+            }),
+            _react3.default.createElement(_reactNative.View, {
+              style: {
+                backgroundColor: global.randomColor(),
+                width: global.ScreenWidth,
+                height: styles.bottomScrollView.height
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 66
+              }
+            })
+          )
+        );
       }
     }]);
 
     return StudyMain;
-  }(_react2.PureComponent), _class.navigationOptions = function (_ref) {
-    var navigation = _ref.navigation;
-    return {
-      title: '学习培训'
-    };
+  }(_react2.PureComponent), _class.navigationOptions = function (_ref2) {
+    var navigation = _ref2.navigation;
+    return {};
   }, _temp));
 
   exports.default = StudyMain;
   ;
+
+  var styles = _reactNative.StyleSheet.create({
+    topMouse: {
+      height: 5,
+      backgroundColor: 'rgb(248,58,90)'
+    },
+    topScrollView: {
+      height: 40,
+      backgroundColor: 'white'
+    },
+    bottomScrollView: {
+      backgroundColor: 'yellow'
+    },
+    itemStyle: {
+      alignSelf: 'center',
+      backgroundColor: 'white',
+      height: 33,
+      justifyContent: 'center'
+    }
+  });
 },695,[118,130,12],"src/components/Study/StudyMain.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
@@ -79240,7 +79413,8 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     cellImage: {
       width: 110,
       height: 80,
-      margin: 8
+      margin: 8,
+      borderRadius: 3
     },
     Separator: {
       backgroundColor: 'rgb(235,235,241)',
