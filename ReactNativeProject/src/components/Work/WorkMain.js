@@ -30,6 +30,7 @@ export default class WorkMain extends PureComponent {
                   keyExtractor={(item,index)=>index+''}
                   listKey={(item,index)=>index+''}
                   ListHeaderComponent={this._ListHeaderComponent}
+                  ItemSeparatorComponent={this._renderSeparator}
         >
       </FlatList>
     )
@@ -50,15 +51,28 @@ export default class WorkMain extends PureComponent {
     )
   }
 
+  _renderSeparator=()=>{
+    return(
+      <View style={styles.Separator}>
+      </View>
+    )
+  }
+
   _renderItem=(item)=>{
 
-    let {brandname,imgurl,title,price} = item
+    let {brandname,squareimgurl,title,price} = item
 
+    let imageUrl = squareimgurl.replace('w.h','120.0')
+    
     return(
-      <View>
-        <Text>
-          {title}
-        </Text>
+      <View style={{flexDirection:'row',backgroundColor:'white'}}>
+        <Image source={{uri:imageUrl}} style={styles.cellImage}>
+        </Image>
+        <View style={{flex:1,justifyContent:'space-between',padding:8}}>
+          <Text style={{fontWeight:'bold'}}>{brandname}</Text>
+          <Text style={{color:'gray'}}>{title}</Text>
+          <Text style={{color:'#06C1AE',fontWeight:'bold'}}>{price}</Text>
+        </View>
       </View>
     )
   }
@@ -70,5 +84,14 @@ const styles = StyleSheet.create({
   },
   gridViewHeader:{
     backgroundColor: 'white',
+  },
+  cellImage:{
+    width: 110,
+    height: 80,
+    margin: 8,
+  },
+  Separator:{
+    backgroundColor:'rgb(235,235,241)',
+    height:1,
   }
 })
