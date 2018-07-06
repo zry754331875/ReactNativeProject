@@ -2,8 +2,7 @@ import { handleActions } from "redux-actions";
 import StudyMainTypes from "../contansts/types/StudyMainTypes";
 
 const defaultState = {
-    previousPageIndex:0,
-    currentPageIndex:0,
+    
 } 
 
 export default handleActions({
@@ -13,8 +12,7 @@ export default handleActions({
 
         return {
             ...state,
-            currentPageIndex:index,
-            previousPageIndex:state.currentPageIndex,
+            
         }
     }
 },defaultState)

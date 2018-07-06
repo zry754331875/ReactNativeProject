@@ -20,7 +20,8 @@ export default class StudyMain extends PureComponent {
     super(props);
     
     this.state = {
-      topMouseAni: new Animated.ValueXY
+      topMouseAni: new Animated.ValueXY,
+      selectIndex:0,
     }
   }
   
@@ -48,7 +49,7 @@ export default class StudyMain extends PureComponent {
                 renderItem={({item:item,index:index})=>{
                   return <TouchableOpacity style={[styles.itemStyle,{width: global.ScreenWidth/3,}]} onPress={this._topScrollViewItemOnPress.bind(this,index)}>
                           <View>
-                            <Text  style={[{textAlign:'center'}]}>{item.key}
+                            <Text  style={[{textAlign:'center',color:this.state.selectIndex == index ? 'rgb(248,58,90)' : 'black'}]}>{item.key}
                             </Text>
                           </View>
                         </TouchableOpacity>}}
@@ -58,6 +59,10 @@ export default class StudyMain extends PureComponent {
       </View>
       <ScrollView ref={(c)=>this.bottomScrollView=c} style={[styles.bottomScrollView,{height: global.ScreenHeight-35,}]} pagingEnabled={true} horizontal={true} onScroll={(event)=>{
         let mul = event.nativeEvent.contentOffset.x/global.ScreenWidth;
+
+        this.setState({
+          selectIndex:parseInt(mul),
+        })
 
         this._konPressonAni(mul);
       }} scrollEventThrottle={16}>
