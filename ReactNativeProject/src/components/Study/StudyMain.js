@@ -49,7 +49,7 @@ export default class StudyMain extends PureComponent {
                 renderItem={({item:item,index:index})=>{
                   return <TouchableOpacity style={[styles.itemStyle,{width: global.ScreenWidth/3,}]} onPress={this._topScrollViewItemOnPress.bind(this,index)}>
                           <View>
-                            <Text  style={[{textAlign:'center',color:this.state.selectIndex == index ? 'rgb(248,58,90)' : 'black'}]}>{item.key}
+                            <Text  style={[{textAlign:'center',color:this.state.selectIndex == index ? 'rgb(248,58,90)' : 'black',fontWeight:'500'}]}>{item.key}
                             </Text>
                           </View>
                         </TouchableOpacity>}}
@@ -66,9 +66,9 @@ export default class StudyMain extends PureComponent {
 
         this._konPressonAni(mul);
       }} scrollEventThrottle={16}>
-        <View style={{backgroundColor: global.randomColor(),width:global.ScreenWidth,height:styles.bottomScrollView.height}} ></View>
-        <View style={{backgroundColor: global.randomColor(),width:global.ScreenWidth,height:styles.bottomScrollView.height}} ></View>
-        <View style={{backgroundColor: global.randomColor(),width:global.ScreenWidth,height:styles.bottomScrollView.height}} ></View>
+        <View style={{backgroundColor: 'gray',width:global.ScreenWidth,height:styles.bottomScrollView.height}} ></View>
+        <View style={{backgroundColor: 'yellow',width:global.ScreenWidth,height:styles.bottomScrollView.height}} ></View>
+        <View style={{backgroundColor: 'green',width:global.ScreenWidth,height:styles.bottomScrollView.height}} ></View>
       </ScrollView>
       </View>
     )
